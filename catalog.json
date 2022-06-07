@@ -1,0 +1,6 @@
+[
+    {"ID":0,"Surname":"Іванов","Name":"Іван","Patronymic":"Іванович","Work":"Кухар","Level":1,"Photo":"https://i.ibb.co/wsHt6ML/image.jpg"},
+    {"ID":1,"Surname":"Андрієв","Name":"Максим","Patronymic":"Сергійович","Work":"Офіціант","Level":1,"Photo":"https://i.ibb.co/6WWhkxN/1.jpg"},
+    {"ID":2,"Surname":"Вареник","Name":"Андрій","Patronymic":"Вікторович","Work":"Кухар","Level":1,"Photo":"https://i.ibb.co/JymPNc1/2.jpg"},
+    {"ID":3,"Surname":"Дмитрук","Name":"Сергій","Patronymic":"Олегович","Work":"Бармен","Level":1,"Photo":"https://i.ibb.co/pKNt6Zr/3.jpg"}
+]

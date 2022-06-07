@@ -2,11 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <a href="#">Main</a>
+            <a href="#"onclick = "showAdminPanel()">Admin</a>
+        </div>
+        <div class="admin-panel" id = "admin-panel">
+            <ul>
+                <li>
+                    <p class="admin-input">Ім'я</p><input type="text" id="admin-input-name">
+                </li>
+                <li>
+                    <p class="admin-input">По-батькові</p><input type="text" id="admin-input-patronymic">
+                </li>
+                <li>
+                    <p class="admin-input">Прізвище</p><input type="text" id="admin-input-surname">
+                </li>
+                <li>
+                    <p class="admin-input">Спеціальність</p>
+                    <select name="select" id = "admin-input-work">
+                        <option value="" selected>Кухар</option>
+                        <option value="">Офіціант</option>
+                        <option value="">Бармен</option>
+                    </select>
+                </li>
+                <li>
+                    <p class="admin-input">Стаж</p><input type="text" id="admin-input-level">
+                </li>
+                <li>
+                    <p class="admin-input">Фото</p><input type="text" id="admin-input-photo">
+                </li>
+                <input type="submit" value="Додати" onclick = "addNewPers()">
+            </ul>
+        </div>
+        <div class="sort-panel">
+            Спеціальність:
+            <select name="select" id="">
+                <option value="select1" onclick = "filter_set('cook')")">Кухар</option>
+                <option value="select2" onclick = "filter_set('of')">Офіціант</option>
+                <option value="select3" onclick = "filter_set('bar')">Бармен</option>
+                <option value="select4" onclick = "filter_set('')" selected>-</option>
+            </select>
+        </div>
+        <div class="catalog" id = "catalog">
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
